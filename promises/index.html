@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Promise Dashboard</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    #output {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      min-height: 50px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🚀 Promise Dashboard</h2>
+
+  <button id="all">Promise.all</button>
+  <button id="race">Promise.race</button>
+  <button id="settled">Promise.allSettled</button>
+  <button id="any">Promise.any</button>
+
+  <div id="output">Click any button...</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
