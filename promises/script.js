@@ -81,4 +81,18 @@ function api1() {
     }
   };
 
-  
+
+// Error thrown by Promise.any when all promises are rejected.
+
+// 📌 Key Points:
+// Contains all errors
+// Access using .errors
+// 💻 Example:
+// Promise.any([
+//   Promise.reject("Error 1"),
+//   Promise.reject("Error 2")
+// ])
+// .catch(err => {
+//   console.log(err);        // AggregateError
+//   console.log(err.errors); // ["Error 1", "Error 2"]
+// });
